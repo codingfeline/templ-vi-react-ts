@@ -1,7 +1,9 @@
 const Footer = () => {
   return (
     <div>
-      <footer>@{new Date().getFullYear()}</footer>
+      <footer className="py-3 px-2 bg-slate-200">
+        @{new Date().getFullYear()}
+      </footer>
     </div>
   )
 }
