@@ -4,6 +4,7 @@ import Private from '../componentProp/Private'
 import { Profile } from '../componentProp/Profile'
 import List from '../generics/List'
 import RandomNumber from '../restriction/RandomNumber'
+import Toast from '../templateLiterals/Toast'
 
 const DomRef = () => {
   const inputRef = useRef<HTMLInputElement>(null!)
@@ -31,6 +32,9 @@ const DomRef = () => {
 
       <h3 className="pt-3">Random number</h3>
       <RandomNumber value={10} isPositive={true} />
+
+      <h3 className="pt-3">Toast Position</h3>
+      <Toast position="center" />
     </div>
   )
 }
