@@ -3,6 +3,7 @@ import { ClassCounter } from '../class/ClassCounter'
 import Private from '../componentProp/Private'
 import { Profile } from '../componentProp/Profile'
 import List from '../generics/List'
+import RandomNumber from '../restriction/RandomNumber'
 
 const DomRef = () => {
   const inputRef = useRef<HTMLInputElement>(null!)
@@ -27,6 +28,9 @@ const DomRef = () => {
         onClick={item => console.log(item)}
       />
       <List items={[1, 2, 3, 4]} onClick={item => console.log(item)} />
+
+      <h3 className="pt-3">Random number</h3>
+      <RandomNumber value={10} isPositive={true} />
     </div>
   )
 }
