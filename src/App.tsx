@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Compo from './components/Compo'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import User from './playground/User'
 
 // prettier-ignore
 // import { About, AuthBox, AuthGit, Footer, Home, Navbar, OneRestaurant, Restaurants } from './components'
@@ -12,11 +13,12 @@ function App() {
   return (
     <Router>
       <div className="ns_box bg-lime-100 flex flex-col h-screen justify-between">
-        {/* <Header /> */}
+        <Header />
         <div className="bg-lime-100  flex  flex-col mb-auto p-3 ">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path='/compo' element={<Compo />} />
+            <Route path='/user' element={<User />} />
           </Routes>
         </div>
         <Footer />
