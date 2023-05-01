@@ -18,7 +18,7 @@ const MutableRef = () => {
   }, [])
 
   return (
-    <div>
+    <div className="bg-blue-100">
       <h2>MutableRef</h2>
       HookTimer = {timer}
       <button onClick={() => stopTimer()}>Stop Timer</button>
