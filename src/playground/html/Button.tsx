@@ -7,7 +7,7 @@ const CustomButton = ({ variant, children, ...rest }: ButtonProps) => {
   return (
     <div>
       <h5>Custom Button</h5>
-      <button className={`class-with-${variant}`} {...rest} f>
+      <button className={`class-with-${variant}`} {...rest}>
         {children}
       </button>
     </div>
