@@ -1,13 +1,18 @@
+import { Link } from 'react-router-dom'
+
 const Header = () => {
   return (
     <header>
-      <h2 className="text-red-400">header</h2>
       <nav>
-        <ul>
-          <li>home</li>
+        <ul className="flex flex-col items-center gap-1">
+          <li className="flex gap-1">
+            <Link to="/">home</Link>
+            <Link to="/user">User</Link>
+            <Link to="/ref">Dom Ref</Link>
+            <Link to="/mutref">MutableRef</Link>
+          </li>
         </ul>
       </nav>
-      <button>test</button>
     </header>
   )
 }
