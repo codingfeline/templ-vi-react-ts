@@ -1,9 +1,11 @@
-import Greet from "../Greet"
+import Greet from '../Greet'
 
 const CustomComponent = (props: React.ComponentProps<typeof Greet>) => {
   return (
-    <div> <h5>Customer Component</h5>
-    {props.}
+    <div>
+      {' '}
+      <h5>Custom Component</h5>
+      {props.messageCount}
     </div>
   )
 }
