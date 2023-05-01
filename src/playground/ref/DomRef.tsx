@@ -5,6 +5,8 @@ import { Profile } from '../componentProp/Profile'
 import List from '../generics/List'
 import RandomNumber from '../restriction/RandomNumber'
 import Toast from '../templateLiterals/Toast'
+import CustomButton from '../html/Button'
+import CustomInput from '../html/Input'
 
 const DomRef = () => {
   const inputRef = useRef<HTMLInputElement>(null!)
@@ -16,8 +18,10 @@ const DomRef = () => {
 
   return (
     <div>
+      <h5>Input focus using ref</h5>
       <input type="text" ref={inputRef} />
       <ClassCounter message="The counter value is " />
+      <h5>Conditional component</h5>
       <Private isLoggedIn={false} component={Profile} />
       <Private isLoggedIn={true} component={Profile} />
       <List
@@ -29,6 +33,10 @@ const DomRef = () => {
       <RandomNumber value={10} isPositive={true} />
 
       <Toast position="center" />
+      <CustomButton variant="primary" onClick={() => console.log('clicked')}>
+        Primary button
+      </CustomButton>
+      <CustomInput type="text" value="test" className="bg-red-200" />
     </div>
   )
 }
