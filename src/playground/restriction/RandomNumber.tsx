@@ -33,7 +33,7 @@ const RandomNumber = ({
 }: RandomNumberProps) => {
   return (
     <div>
-      <h3>RandomNumber</h3>
+      <h5>RandomNumber</h5>
       {value} {isPositive && 'positive'} {isNegative && 'negative'} {''}
       {isZero && 'zero'}
     </div>

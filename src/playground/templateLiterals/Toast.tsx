@@ -14,7 +14,7 @@ type ToastProps = {
 const Toast = ({ position }: ToastProps) => {
   return (
     <div>
-      <h2>Toast Notification Position - {position}</h2>
+      <h5>Toast Notification Position - {position}</h5>
     </div>
   )
 }

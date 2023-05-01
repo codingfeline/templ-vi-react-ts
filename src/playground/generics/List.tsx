@@ -10,7 +10,7 @@ type ListProps<T> = {
 const List = <T extends number | string>({ items, onClick }: ListProps<T>) => {
   return (
     <div>
-      <h2>List of items</h2>
+      <h5>List of items</h5>
       {items.map((item, index) => {
         return (
           <div key={index} onClick={() => onClick(item)}>
